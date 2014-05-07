@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".EditContact" >
+  
+
+ <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#0099cc"
+            tools:ignore="UseCompoundDrawables" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ico"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/editprofilecaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/appname"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+    <LinearLayout
+            android:id="@+id/the_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="@string/texteditcontact"
+            android:textColor="#33b5e5"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/profileedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openDialog"
+            android:text="@string/todialog" />
+
+        <Button
+            android:id="@+id/profiledelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="deleteRequest"
+            android:text="@string/deletecontact" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent" >
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

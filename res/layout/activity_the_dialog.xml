@@ -1,0 +1,77 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TheDialog" 
+    android:background="#0099cc">
+
+    <LinearLayout
+        style="@style/LoginFormContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0099cc"
+        android:orientation="vertical" >
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="45dp"
+	            android:background="#0099cc"
+	            tools:ignore="UseCompoundDrawables" >
+	
+	            <ImageView
+	                android:id="@+id/imageView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:contentDescription="@string/ico"
+	                android:src="@drawable/ic_launcher" />
+	
+	            <TextView
+	                android:id="@+id/editprofilecaption"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_vertical"
+	                android:text="@string/appname"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	        </LinearLayout>
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="392dp"
+            android:layout_weight="0.51" >
+
+            <LinearLayout
+                android:id="@+id/messages_field"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+        android:orientation="horizontal"
+                android:background="@color/black_overlay"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:ems="10"
+                android:background="@color/transparent"
+                android:inputType="text"
+                android:maxLines="10" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="sendMessage"
+                android:src="@drawable/aa11" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</merge>

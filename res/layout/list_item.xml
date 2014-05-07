@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:color="#fff"
+    android:orientation="vertical" >
+
+     <TextView
+            android:id="@+id/text1"
+            android:text="@string/welcome"
+            android:textColor="#fff"
+    		android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp" />
+
+        <TextView
+            android:textColor="#fff"
+    		android:id="@+id/text2"
+            android:text="@string/welcome"
+            android:layout_width="match_parent"
+            android:textSize="17sp"
+            android:layout_height="match_parent" />
+
+</LinearLayout>

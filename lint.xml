@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/activity_the_dialog.xml" />
+    </issue>
+    <issue id="InefficientWeight">
+        <ignore path="res/layout/activity_the_dialog.xml" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="res/layout/activity_the_dialog.xml" />
+    </issue>
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/activity_the_dialog.xml" />
+    </issue>
+    <issue id="ScrollViewSize">
+        <ignore path="res/layout/activity_the_dialog.xml" />
+    </issue>
+    <issue id="TextFields">
+        <ignore path="res/layout/activity_the_dialog.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/activity_the_dialog.xml" />
+    </issue>
+</lint>
